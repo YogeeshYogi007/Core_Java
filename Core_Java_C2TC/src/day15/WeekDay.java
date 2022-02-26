@@ -1,0 +1,5 @@
+package day15;
+
+public enum WeekDay {
+	MONDAY, TUESDAY, WEDNESDAY, THRUSDAY, FRIDAY, SATURDAY, SUNDAY;
+}
