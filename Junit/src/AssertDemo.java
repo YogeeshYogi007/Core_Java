@@ -1,4 +1,6 @@
 import static org.junit.Assert.assertEquals;
+
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 public class AssertDemo {
@@ -10,6 +12,7 @@ public class AssertDemo {
 		int b=2;
 		assertEquals(a, b);
 	}
+	@Disabled
 	@Test
 	void compare1()
 	{
