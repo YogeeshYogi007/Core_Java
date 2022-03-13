@@ -31,7 +31,15 @@ public class StreamAPIDemo {
 				System.out.println(i);
 			}
 		});*/
-		Num.forEach(System.out::println);
+		//Num.forEach(System.out::println);
+		//Num.forEach(i-> doubleIt(i));
+		Num.forEach(StreamAPIDemo::doubleIt);
+	
+	}
+
+		public static void doubleIt(Integer i) {
+		// TODO Auto-generated method stub
+		System.out.println(i*2);
 	}
 
 }
