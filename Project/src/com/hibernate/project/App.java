@@ -19,16 +19,18 @@ Session session = factory.getCurrentSession();
 
 try {
 // Create object of entity class type
-Users user = new Users( 1, "Yogeesh","gh","@gamil.com");
+Users user = new Users();
 // Start transaction
 session.beginTransaction();
 // Perform operation
-session.save(user);
+user = session.get(Users.class,1);
+//updating object
+user.setUsers_fname("SAM");
 
 
 // Commit the transaction 
 session.getTransaction().commit();
-System.out.println("Row Added");
+System.out.println(user);
 
 
 } finally {
@@ -38,5 +40,6 @@ factory.close();
 
 }
 }
+
 
 

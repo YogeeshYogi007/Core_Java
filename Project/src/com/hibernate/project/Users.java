@@ -11,13 +11,14 @@ public class Users {
 	
 		
 
-		public Users(int users_id, String users_fname, String users_lname, String users_email) {
+		public Users() {
 			this.users_id = users_id;
 			this.users_fname = users_fname;
 			this.users_lname = users_lname;
 			this.users_email = users_email;
 		}
 
+		
 		@Id 
 		@Column(name="users_id")
 		int users_id;
