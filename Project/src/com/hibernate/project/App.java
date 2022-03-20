@@ -25,7 +25,7 @@ session.beginTransaction();
 // Perform operation
 user = session.get(Users.class,1);
 //updating object
-user.setUsers_fname("SAM");
+//user.setUsers_fname("SAM");
 
 
 // Commit the transaction 
