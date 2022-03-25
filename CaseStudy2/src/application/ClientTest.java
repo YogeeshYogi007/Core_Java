@@ -4,11 +4,14 @@ import Framework.CurrentAcc;
 import Framework.SavingAcc;
 import bankApplication.MMBankFactory;
 
+import java.applet.Applet;
+import java.awt.*;
 
-public class ClientTest {
+public class ClientTest extends Applet{
 	private static BankFactory factory;
 	private static SavingAcc savingAcc;
 	private static CurrentAcc currentAcc;
+	
 
 public static void main(String[] args) {
 	factory = new MMBankFactory();
